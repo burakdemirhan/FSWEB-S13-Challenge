@@ -6,15 +6,15 @@ public class Company {
     private double giro;
     private String[] developerNames;
 
-    // Constructor
+
     public Company(long id, String name, double giro, String[] developerNames) {
         this.id = id;
         this.name = name;
-        setGiro(giro);  // Giro'nun sıfırdan küçük olamaması sağlanıyor
+        setGiro(giro);
         this.developerNames = developerNames;
     }
 
-    // Getter ve Setter metodları
+
     public long getId() {
         return id;
     }
@@ -35,7 +35,7 @@ public class Company {
         return giro;
     }
 
-    // Giro değeri 0'dan küçük olamaz
+
     public void setGiro(double giro) {
         if (giro < 0) {
             System.out.println("Giro değeri negatif olamaz. Giro değeri sıfır olarak ayarlandı.");
@@ -53,7 +53,7 @@ public class Company {
         this.developerNames = developerNames;
     }
 
-    // Developer ekleme metodu
+
     public void addEmployee(int index, String name) {
         if (index < 0 || index >= developerNames.length) {
             System.out.println("Geçersiz index: Dizinin sınırları dışı.");
@@ -67,7 +67,7 @@ public class Company {
         }
     }
 
-    // toString metodu
+
     @Override
     public String toString() {
         StringBuilder developers = new StringBuilder();

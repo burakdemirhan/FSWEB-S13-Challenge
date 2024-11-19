@@ -36,9 +36,9 @@ public class Healthplan {
         this.name = name;
         this.plan = plan;
     }
-    // toString metodu
+
     @Override
     public String toString() {
-        return "Healthplan{id=" + id + ", name='" + name + "', plan=" + plan.getName() + " (" + plan.getPrice() + " USD)}";
+        return "Healthpla{id=" + id + ", name='" + name + "', plan=" + plan.getName() + " (" + plan.getPrice() + " USD)}";
     }
 }

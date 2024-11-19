@@ -1,9 +1,8 @@
 package org.example.enums;
 
 public enum Plan {
-    BASIC("Basic Plan", 100.0),
-    PREMIUM("Premium Plan", 200.0),
-    FAMILY("Family Plan", 300.0);
+    BASIC("Basic Plan", 100.0);
+
 
     private String name;
     private double price;

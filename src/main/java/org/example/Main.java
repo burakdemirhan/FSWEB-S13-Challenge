@@ -9,9 +9,9 @@ public class Main {
     public static void runOperations() {
 
         Healthplan healthplan1 = new Healthplan(1, "Sigorta A", Plan.BASIC);
-        Healthplan healthplan2 = new Healthplan(2, "Sigorta B", Plan.PREMIUM);
+
         System.out.println(healthplan1);
-        System.out.println(healthplan2);
+
 
 
         String[] employeeHealthPlans = {"Sigorta A"};
